@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>REMY L∆MONT</title>
+   <meta name="description" content="REMY META DATA">
+   <link href="assets/style.css" media="all" rel="stylesheet" type="text/css">
+   <link href="assets/style-responsive.css" media="all" rel="stylesheet" type="text/css">
+   <link href="assets/reset.css" media="all" rel="stylesheet" type="text/css">
+   <link href="dist/lity.css" rel="stylesheet"/>
+   <link rel="icon" href="remyfav.png" type="image/x-icon" />
+   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/af.js"></script>
+    
+    <style>   
+      
+      @font-face {
+    font-family: CenturyGothic;
+    src: url(CenturyGothic.tff);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'CenturyGothic';
+  color: #D9D9D9;
+}
+
+/*.main-bg {
+  background: url(../img/main-bg.jpeg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-bg {
+background: url(../img/about-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blog-bg {
+background: url(../img/) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-bg {
+background: url(../img/contact-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+ color: #FDFEF6;
+}
+
+img {
+  width: 100%;
+}
+
+#splashscreen {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:white;
+}
+
+#splashscreen img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1024px) { 
+    #splashscreen img  {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+}
+
+
+.bg1 img {
+
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+
+  @media screen and (max-width: 1024px) { 
+    .bg1 img  {
+      left: 50%;
+      margin-left: -512px; 
+    }
+  }
+}
+
+
+
+.container {
+}
+
+div.container {
+  display:inline-block;
+  margin-left: 2%;
+}
+
+.container img {
+  width: 220px;
+}
+
+.container img:hover {
+  opacity: 0.4
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align:center;
+  margin: 0;
+}
+
+.recent {
+  font-size: 26px;
+}
+
+
+/*ABOUT PAGE */
+
+img.about-bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.about-bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+/*CONTACT PAGE*/
+
+.contact-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.contact-box p {
+  font-size: 1em;
+  text-align: left;
+ padding-bottom: 10px;
+ padding-left: 35px;
+}
+
+hr {
+ margin-left: 35px;
+ width: 22%;
+ float: left;
+ height: 2px;
+ background: #D9D9D9;
+ font-size: 0;
+ border: 0;
+}
+
+/*ABOUT PAGE*/
+
+.about-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.about-box p {
+  text-align: right;
+ padding-bottom: 10px;
+ padding-right: 35px;
+}
+
+
+/*PLAY BUTTON*/
+
+/*.mute, .unMute {position:absolute;top:30px;right:30px;color:white;}
+.unMute {display:none;}
+.mute img, .unMute img {height:25px;}*/
+
+
+/*GRID */
+
+
+.video-container {
+  width:100%;
+  max-width: 98%;
+  margin: 11em auto;
+  overflow:hidden;
+  padding:.1em;
+}
+
+img {
+  max-width:100%;
+}
+
+.item {
+  width:25%;
+  float:left;
+  padding: 0.3em;
+}
+
+.item p {
+  min-height:1em;
+  margin: .10em 0 0 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.item:hover p {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.item:hover img {
+  opacity: 0.5;
+}
+
+@media screen and (min-width:1500px) {
+  
+ .video-container {
+
+   margin: 12em auto;
+
+
+ }
+  
+  .item {
+   margin-top: 10%;
+  }
+
+}
+
+
+@media screen and (max-width:800px) {
+  
+ 
+  .item {
+    width:50%;
+  }
+  
+  .item p {
+  font-size:.8em;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  
+  body {
+
+  }
+  
+  .item {
+    width:100%;
+  }
+
+}
+
+      
+   
+   
+   </style>
+    
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">RECENT WORK |</a></li>
+  <li class="recent"><a href="about.html">∆BOUT |</a></li>
+  <li><a href="blog.html">BlOG |</a></li>
+  <li><a href="contact.html">CONt∆CT |</a></li>
+</ul>
+
+
+<div class="about-box">
+  <p>REMY L∆MONT IS ∆N INDEPENDENT </p>
+  <p>DIRECTOR AND FILMMAKER</p>
+</div>
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="vendor/jquery.js"></script>
+    <script src="dist/lity.js"></script>
+    <script src="assets/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>REMY L∆MONT</title>
+      
+   <style>   
+      
+      @font-face {
+    font-family: CenturyGothic;
+    src: url(CenturyGothic.tff);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'CenturyGothic';
+  color: #D9D9D9;
+}
+
+/*.main-bg {
+  background: url(../img/main-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-bg {
+background: url(../img/about-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blog-bg {
+   background: url(../img/) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-bg {
+  background: url(../img/contact-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+ color: #FDFEF6;
+}
+
+img {
+  width: 100%;
+}
+
+#splashscreen {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:white;
+}
+
+#splashscreen img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1024px) { 
+    #splashscreen img  {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+}
+
+
+.bg1 img {
+
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+
+  @media screen and (max-width: 1024px) { 
+    .bg1 img  {
+      left: 50%;
+      margin-left: -512px; 
+    }
+  }
+}
+
+
+
+.container {
+}
+
+div.container {
+  display:inline-block;
+  margin-left: 2%;
+}
+
+.container img {
+  width: 220px;
+}
+
+.container img:hover {
+  opacity: 0.4
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align:center;
+  margin: 0;
+}
+
+.recent {
+  font-size: 26px;
+}
+
+
+/*ABOUT PAGE */
+
+img.about-bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.about-bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+/*CONTACT PAGE*/
+
+.contact-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.contact-box p {
+  font-size: 1em;
+  text-align: left;
+ padding-bottom: 10px;
+ padding-left: 35px;
+}
+
+hr {
+ margin-left: 35px;
+ width: 22%;
+ float: left;
+ height: 2px;
+ background: #D9D9D9;
+ font-size: 0;
+ border: 0;
+}
+
+/*ABOUT PAGE*/
+
+.about-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.about-box p {
+  text-align: right;
+ padding-bottom: 10px;
+ padding-right: 35px;
+}
+
+
+/*PLAY BUTTON*/
+
+/*.mute, .unMute {position:absolute;top:30px;right:30px;color:white;}
+.unMute {display:none;}
+.mute img, .unMute img {height:25px;}*/
+
+
+/*GRID */
+
+
+.video-container {
+  width:100%;
+  max-width: 98%;
+  margin: 11em auto;
+  overflow:hidden;
+  padding:.1em;
+}
+
+img {
+  max-width:100%;
+}
+
+.item {
+  width:25%;
+  float:left;
+  padding: 0.3em;
+}
+
+.item p {
+  min-height:1em;
+  margin: .10em 0 0 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.item:hover p {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.item:hover img {
+  opacity: 0.5;
+}
+
+@media screen and (min-width:1500px) {
+  
+ .video-container {
+
+   margin: 12em auto;
+
+
+ }
+  
+  .item {
+   margin-top: 10%;
+  }
+
+}
+
+
+@media screen and (max-width:800px) {
+  
+ 
+  .item {
+    width:50%;
+  }
+  
+  .item p {
+  font-size:.8em;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  
+  body {
+
+  }
+  
+  .item {
+    width:100%;
+  }
+
+}
+
+      
+   
+   
+   </style>
+   
+   
+      
+   <link rel="stylesheet" type="text/css" href="style/style.css"/>
+   <meta name="description" content="REMY META DATA">
+   <link href="dist/lity.css" rel="stylesheet"/>
+   <link rel="icon" href="remyfav.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/af.js"></script>
+
+
+</head>
+<body>
+
+<!-- PRE LOADER  -->
+
+<!-- <div id="splashscreen">
+    <a href="#" class="enter_link"> <img src="img/pageloader2.jpg" />
+    </a>
+</div> -->
+
+
+<ul>
+  <li class="recent"><a href="">RECENT WORK |</a></li>
+  <li><a href="about.html">∆BOUT |</a></li>
+  <li><a href="blog.html">BlOG |</a></li>
+  <li><a href="contact.html">CONt∆CT |</a></li>
+</ul>
+
+
+<div class="video-container">
+  
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238503664" data-lity>
+      <img src="img/lib/_-FOUR-TO-THE-FLOOR-_-S04-CHaNNEL-4-_.gif" />
+    <p>| FOUR TO THE FLOOR | S04 CH∆NNEL 4 |</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238499023" data-lity>
+      <img src="img/lib/_-FTTF-_-ALL-DAY-BREAKFAST-_-S01-_-ALL4.gif" />
+    <p>| FTTF | ∆LL D∆Y BRE∆KFAST | S01 | ∆LL4</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238501327 " data-lity>
+      <img src="img/lib/_F--K-BREXIT_-4N-BOYS-_-LEMONADE-MONEY_.gif" />
+    <p> |F**K BREXIT| 4N BOYS | LEMONADE MONEY|</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238502018" data-lity>
+      <img src="img/lib/_ENOCH-SECTIONS_-FTTF-_.gif" />
+    <p>|ENOCH SECTIONS|</p><p> FTTF |</p>
+      </a>
+  </div>
+
+  <div class="item">
+      <a class="btn" href="https://vimeo.com/163181613" data-lity>
+        <img src="img/lib/SKUNK-ANASIE.gif" />
+      <p>|SKUNK ∆N∆SIE|</p>
+        <p>WITHOUT YOU</p></a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238505896" data-lity>
+      <img src="img/lib/_-CHABUDDY-G-_-ALL-DAY-BREAKFAST-_-.gif" />
+    <p>| CHABUDDY G |</p><p> ALL DAY BREAKFAST |</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238503539" data-lity>
+      <img src="img/lib/_P-MONEY-%26-LITTLE-D-_-B2B-LIVE-_.gif" />
+    <p>| P MONEY &amp; LITTLE D | B2B LIVE |</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238502521" data-lity>
+      <img src="img/lib/SWIPE-LEFT.gif" />
+    <p>|SWIPE LEFT</p><p>| SKILLET |</p>
+      </a>
+  </div>
+
+  <div class="item">
+    <a class="btn" href="https://vimeo.com/238499839" data-lity>
+      <img src="img/lib/_NEON-SPACE-JUNGLE_-HENRY-WOO-_-FOUR-TO-THE-FLOOR_-.gif" />
+    <p>NEON SP∆CE JUNGLE| HENRY WOO | FOUR TO THE FLOOR|</p>
+      </a>
+  </div>
+
+  
+
+ 
+    
+    <div class="item">
+      <a class="btn" href="https://vimeo.com/145980607" data-lity>
+        <img src="img/lib/CLAPTONE.gif" />
+       <p>|CL∆PTONE|</p>
+        <p>THE ONLY THING</p></a>
+    </div>
+    
+    <div class="item">
+      <a class="btn" href="https://vimeo.com/129389931" data-lity>
+       <img src="img/lib/SETTING-OUT.gif" />
+      <p>|∆NDREW SKEET|</p>
+       <p>SETTING</p></a>
+    </div>
+    
+    <div class="item">
+      <a class="btn" href="https://vimeo.com/147044491" data-lity>
+       <img src="img/thebeach.jpg" />
+      <p>|THE BE∆CH|</p>
+       <p>THIEVES</p></a>
+    </div>
+
+</div> <!--close container-->
+
+
+<!-- OLD GRID --> 
+
+<!-- <div class="wrapper">
+
+  <div class="container">
+     <a class="btn" href="https://vimeo.com/163181613" data-lity>
+       <img src="img/skunkanasie.jpg" /></a>
+         <p>|SKUNK ∆N∆SIE|</p>
+           <p>WITHOUT YOU</p>
+    </div>
+
+    <div class="container">
+      <a class="btn" href="https://vimeo.com/145980607" data-lity>
+        <img src="img/claptonesquare.jpg" /></a>
+         <p>|CL∆PTONE|</p>
+          <p>THE ONLY THING</p>
+    </div>
+
+    <div class="container">
+      <a class="btn" href="https://vimeo.com/129389931" data-lity>
+       <img src="img/andrewskeet.jpg" /></a>
+        <p>|∆NDREW SKEET|</p>
+         <p>SETTING</p>
+    </div>
+    
+    <div class="container">
+       <a class="btn" href="https://vimeo.com/147044491" data-lity>
+        <img src="img/thebeach.jpg" /></a>
+         <p>|THE BE∆CH|</p>
+          <p>THIEVES</p>
+    </div>
+
+</div>
+ -->
+
+<!-- OLD GRID ENDS -->
+
+
+    <script src="js/script.js"></script>
+    <script src="vendor/jquery.js"></script>
+    <script src="dist/lity.js"></script>
+
+</body>
+</html>
